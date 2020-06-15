@@ -83,7 +83,7 @@ Expand-Archive -Path $zip -DestinationPath $dest -Force
 To calculate a SHA256 sum of a file use this
 
 ```powershell
-((Get-FileHash $filename -Algorithm sha256).Hash
+(Get-FileHash $filename -Algorithm sha256).Hash
 ```
 
 ## `printenv`
@@ -125,7 +125,7 @@ ls | measure
 To measure the time that a command takes, use
 
 ```powershell
-Measure-Command {docker run microsoft/nanoserver hostname}
+Measure-Command {docker run mcr.microsoft.com/windows/nanoserver:1809 hostname}
 ```
 
 ## time the stdout of another command
